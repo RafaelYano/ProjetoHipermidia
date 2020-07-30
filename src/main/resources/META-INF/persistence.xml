@@ -1,0 +1,46 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+	<persistence-unit name="titansPU"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>Titans.ApartamentoRobin</class>
+		<class>Titans.Capacidades</class>
+		<class>Titans.CasaRachel</class>
+		<class>Titans.Comodo</class>
+		<class>Titans.Detalhes</class>
+		<class>Titans.Esconderijo</class>
+		<class>Titans.Fisico</class>
+		<class>Titans.Grupos</class>
+		<class>Titans.Habilidades</class>
+		<class>Titans.Intalacao</class>
+		<class>Titans.Item</class>
+		<class>Titans.Local</class>
+		<class>Titans.Localizacao</class>
+		<class>Titans.MancaoDestino</class>
+		<class>Titans.Mental</class>
+		<class>Titans.Nacao</class>
+		<class>Titans.Pessoa</class>
+		<class>Titans.Planeta</class>
+		<class>Titans.Plano</class>
+		<class>Titans.Poder</class>
+		<class>Titans.Super</class>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/titans?zeroDateTimeBehavior=convertToNull" />
+			<property name="javax.persistence.jdbc.user" value="titans" />
+			<property name="javax.persistence.jdbc.driver"
+				value="org.mariadb.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.password"
+				value="titans" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MariaDBDialect" />
+			<property
+				name="javax.persistence.schema-generation.database.action"
+				value="none" />
+		</properties>
+	</persistence-unit>
+</persistence>
